@@ -15,6 +15,8 @@ class String
   end
 
   def count_sentences
-    self.split(/[[:punct:]]/).count
+    self.include?(/[[:punct:]]\s[A-Z]/)split(/[[:punct:]]/).count
   end
 end
+
+#1. it should split each sentence but not split at ellipsis
