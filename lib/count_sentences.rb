@@ -15,10 +15,9 @@ class String
   end
 
   def count_sentences
-    self.split(/[[:punct:]]/).count
-
+    self.split(/[[:punct:]]/)
+binding.pry
   end
-  binding.pry
 end
 
 #1. it should split each sentence but not split at ellipsis
