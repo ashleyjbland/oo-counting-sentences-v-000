@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     /[[:punct:]]\s[A-Z]/.match(self)
-    self.split(/[[:punct:]]/).count
+    
   end
 end
 
